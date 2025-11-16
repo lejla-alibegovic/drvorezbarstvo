@@ -37,7 +37,7 @@ public class DropdownService : IDropdownService
     public async Task<IEnumerable<KeyValuePair<int, string>>> GetClientsAsync() => await _usersService.GetClientsDropdownItems();
     public async Task<IEnumerable<KeyValuePair<int, string>>> GetProductCategoriesAsync() => await _productCategoriesService.GetDropdownItems();
     public async Task<IEnumerable<KeyValuePair<int, string>>> GetToolsAsync() => await _toolsService.GetDropdownItems();
-    public async Task<IEnumerable<KeyValuePair<int, string>>> GetToolCategoriesAsync() => await _toolsService.GetDropdownItems();
+    public async Task<IEnumerable<KeyValuePair<int, string>>> GetToolCategoriesAsync() => await _toolCategoriesService.GetDropdownItems();
 
     private IEnumerable<KeyValuePair<int, string>> GetValues<T>() where T : Enum
     {
